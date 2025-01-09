@@ -11,9 +11,6 @@ read instruction < "$in.txt"
 
 for word in $instruction; do
 	((n++))
-	if [[ "$n" == 2 ]]; then
- 	   my_pid=$word
-	fi
 done
 
 for word in $instruction; do
@@ -34,7 +31,7 @@ done
 ct=0
 for word in $instruction; do
 	if [[  "$ct" != "$n"  && "$ct" != 1 ]]; then
-		cat "man $word" 
+		man $word 
 	fi
 done
 
