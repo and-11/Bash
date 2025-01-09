@@ -1,0 +1,1 @@
+BEGIN-REQ chmod man test_command END-REQ
